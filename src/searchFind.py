@@ -15,7 +15,8 @@ def searchGame(gamewindow):
     pygame.display.set_caption("Search and Find Game")
     # Set Background - Using a picture
     gamewindow.fill(DARKBLUE)
-    menuBackground = pygame.transform.scale(pygame.image.load("hidden background.png"), (1200, 650))
+    menuBackground = pygame.transform.scale(pygame.image.load(
+        "hidden background.png"), (1200, 650))
     gamewindow.blit(menuBackground, (0, 0))
 
     # Title

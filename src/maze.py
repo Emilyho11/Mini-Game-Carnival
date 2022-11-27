@@ -271,7 +271,8 @@ def mazeInstructions(gamewindow):
     GREEN = (8, 242, 47)
 
     # Set Background - Using a picture
-    mazeBackground = pygame.transform.scale(pygame.image.load("mazeBackground.jpg"), (1200, 800))
+    mazeBackground = pygame.transform.scale(pygame.image.load(
+        "mazeBackground.jpg"), (1200, 800))
     gamewindow.blit(mazeBackground, (0, 0))
 
     pygame.display.set_caption("Maze Game Instructions")

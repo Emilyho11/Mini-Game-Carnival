@@ -149,7 +149,8 @@ def hardFlappyGame():
         # End of for loop
 
         # Add background image
-        hardBackground = pygame.transform.scale(pygame.image.load("runningBackground.png"), (1200, 800))
+        hardBackground = pygame.transform.scale(pygame.image.load(
+            "runningBackground.png"), (1200, 800))
         gamewindow.blit(hardBackground, (0, 0))
         pygame.draw.rect(gamewindow, GREEN, (0, 660, 1200, 300))
 

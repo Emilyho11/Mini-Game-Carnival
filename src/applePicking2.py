@@ -32,7 +32,6 @@ mathquestions = ["6 x 6 = ?",
                  "7 x 12 = ?",
                  "49 + 71 = ?"]
 mathAnswers = ['36', '66', '14', '3', '34', '23', '88', '12', '84', '120']
-alreadyShown = []
 
 appleLocationX = [540, 900, 420, 300, 700, 860, 520, 300, 550, 720]
 appleLocationY = [170, 170, 330, 220, 220, 310, 270, 380, 370, 320]
@@ -40,6 +39,14 @@ appleLocationY = [170, 170, 330, 220, 220, 310, 270, 380, 370, 320]
 # Randomize the locations
 randLocationX = randrange(len(appleLocationX))
 randomPlace = appleLocationX[randLocationX]
+
+def fontNum(gamewindow, message, x, y):
+    font = pygame.font.SysFont('arialrounded', 25)
+    num = font.render(message, True, WHITE)
+    Num = num.get_rect()
+    Num.center = (x + 25, y + 30)
+    gamewindow.blit(num, Num)
+    pygame.display.update()
 
 def appleScreen(gamewindow):
     pygame.display.set_caption("Apple Picking Game")
@@ -63,17 +70,42 @@ def appleScreen(gamewindow):
 
     # Apple Picking Basket
     basket = pygame.transform.scale(pygame.image.load("basket.png"), (150, 150))
-    gamewindow.blit(basket, (400, 520))
-    gamewindow.blit(basket, (700, 520))
+    gamewindow.blit(basket, (400, 500))
+    gamewindow.blit(basket, (700, 500))
     pygame.display.update()
+
 
 def applePicking(gamewindow):
     from reusableFunctions import backToMainMenu
-    basketLocx = [500, 440, 470, 480, 750, 780, 790, 740, 730, 770]
-    basketLocy = [510, 530, 530, 520, 520, 510, 520, 535, 530, 520]
-
     randQuestions = randrange(len(mathquestions))
     appleScreen(gamewindow)
+
+    # Function that allows player to click the apple
+    def clickApple(gamewindow, appleSelected, x, y, appleNum, num, randQuestions):
+        pygame.event.get(pygame.MOUSEBUTTONDOWN)
+        mouse = pygame.mouse.get_pos()
+        click = pygame.mouse.get_pressed()
+
+        if (x + 50 > mouse[0] > x and y + 50 > mouse[1] > y):
+            if click[0] == 1:
+                appleSelected = appleNum[num]
+
+        for i in range(len(mathquestions)):
+            if mathquestions[i] == mathquestions[randQuestions]:
+                if appleSelected == mathAnswers[i]:
+                    gamewindow.fill(BLUE)
+                    congratsBackground = pygame.transform.scale(pygame.image.load(
+                        "congratsBackground.png"),
+                                                                (1200, 800))
+                    gamewindow.blit(congratsBackground, (0, 0))
+                    font = pygame.font.Font('freesansbold.ttf', 60)
+                    correct = font.render('Correct!', True, BLACK)
+                    Correct = correct.get_rect()
+                    Correct.center = (600, 120)
+                    gamewindow.blit(correct, Correct)
+                    pygame.display.update()
+                    pygame.time.wait(3000)
+                    applePicking(gamewindow)
 
     # Math Questions
     font = pygame.font.Font('freesansbold.ttf', 40)
@@ -86,14 +118,6 @@ def applePicking(gamewindow):
     apple = pygame.transform.scale(pygame.image.load("apple.png"), (50, 50))
     for items in range(len(appleLocationX)):
         gamewindow.blit(apple, (appleLocationX[items], appleLocationY[items]))
-
-    def fontNum(gamewindow, message, x, y):
-        font = pygame.font.SysFont('arialrounded', 25)
-        num = font.render(message, True, WHITE)
-        Num = num.get_rect()
-        Num.center = (x + 25, y + 30)
-        gamewindow.blit(num, Num)
-        pygame.display.update()
 
     # Answers on apples
     appleNum = []
@@ -112,51 +136,8 @@ def applePicking(gamewindow):
     apple8 = fontNum(gamewindow, appleNum[7], 300, 380)
     apple9 = fontNum(gamewindow, appleNum[8], 550, 370)
     apple10 = fontNum(gamewindow, appleNum[9], 720, 320)
-    appleList = [apple1, apple2, apple3, apple4, apple5, apple6, apple7, apple8, apple9, apple10]
-
     pygame.display.update()
 
-    # Function that allows player to click the apple
-    def clickApple(gamewindow, appleSelected, x, y, appleNum, num, randQuestions, direction1):
-        pygame.event.get(pygame.MOUSEBUTTONDOWN)
-        mouse = pygame.mouse.get_pos()
-        click = pygame.mouse.get_pressed()
-
-        if (x + 50 > mouse[0] > x and y + 50 > mouse[1] > y):
-            if click[0] == 1:
-                appleSelected = appleNum[num]
-
-        for i in range(len(mathquestions)):
-            if mathquestions[i] == mathquestions[randQuestions]:
-                if appleSelected == mathAnswers[i]:
-                    # Apple animation
-                    if direction1 == "down":
-                        appleLocationY[i] = basketLocy[i]
-                        appleLocationX[i] = basketLocx[i]
-                        if appleLocationY[i] == basketLocy[i]:
-                            applePicking(gamewindow)
-                    gamewindow.blit(apple, (appleLocationX[i], appleLocationY[i]))
-                    gamewindow.blit(num, (appleLocationX[i], appleLocationY[i]))
-                    fpsClock.tick(FPS)
-
-                    '''
-                    gamewindow.fill(BLUE)
-                    congratsBackground = pygame.transform.scale(pygame.image.load("congratsBackground.png"),(1200, 800))
-                    gamewindow.blit(congratsBackground, (0, 0))
-                    font = pygame.font.Font('freesansbold.ttf', 60)
-                    correct = font.render('Correct!', True, BLACK)
-                    Correct = correct.get_rect()
-                    Correct.center = (600, 120)
-                    gamewindow.blit(correct, Correct)
-                    pygame.display.update()
-                    pygame.time.wait(3000)
-                    applePicking(gamewindow)
-                    '''
-
-    # Time
-    FPS = 30
-    fpsClock = pygame.time.Clock()
-    direction1 = 'down'
     points = 0
     appleanswer = False
     applebuttons = True
@@ -170,17 +151,16 @@ def applePicking(gamewindow):
         backToAppleInstructions(gamewindow)
 
         # Player can click the apple
-        clickApple(gamewindow, appleSelected, 540, 170, appleNum, 0, randQuestions, direction1)
-        clickApple(gamewindow, appleSelected, 900, 170, appleNum, 1, randQuestions, direction1)
-        clickApple(gamewindow, appleSelected, 420, 330, appleNum, 2, randQuestions, direction1)
-        clickApple(gamewindow, appleSelected, 300, 220, appleNum, 3, randQuestions, direction1)
-        clickApple(gamewindow, appleSelected, 700, 220, appleNum, 4, randQuestions, direction1)
-        clickApple(gamewindow, appleSelected, 860, 310, appleNum, 5, randQuestions, direction1)
-        clickApple(gamewindow, appleSelected, 520, 270, appleNum, 6, randQuestions, direction1)
-        clickApple(gamewindow, appleSelected, 300, 380, appleNum, 7, randQuestions, direction1)
-        clickApple(gamewindow, appleSelected, 550, 370, appleNum, 8, randQuestions, direction1)
-        clickApple(gamewindow, appleSelected, 720, 320, appleNum, 9, randQuestions, direction1)
-
+        clickApple(gamewindow, appleSelected, 540, 170, appleNum, 0, randQuestions)
+        clickApple(gamewindow, appleSelected, 900, 170, appleNum, 1, randQuestions)
+        clickApple(gamewindow, appleSelected, 420, 330, appleNum, 2, randQuestions)
+        clickApple(gamewindow, appleSelected, 300, 220, appleNum, 3, randQuestions)
+        clickApple(gamewindow, appleSelected, 700, 220, appleNum, 4, randQuestions)
+        clickApple(gamewindow, appleSelected, 860, 310, appleNum, 5, randQuestions)
+        clickApple(gamewindow, appleSelected, 520, 270, appleNum, 6, randQuestions)
+        clickApple(gamewindow, appleSelected, 300, 380, appleNum, 7, randQuestions)
+        clickApple(gamewindow, appleSelected, 550, 370, appleNum, 8, randQuestions)
+        clickApple(gamewindow, appleSelected, 720, 320, appleNum, 9, randQuestions)
 
 
 def backToAppleInstructions(gamewindow):
@@ -207,7 +187,8 @@ def backToAppleInstructions(gamewindow):
 def appleInstructions(gamewindow):
     from reusableFunctions import backToMainMenu
     # Set Background - Using a picture
-    spaceBackground = pygame.transform.scale(pygame.image.load("appleBackground.jpg"), (1200, 800))
+    spaceBackground = pygame.transform.scale(pygame.image.load(
+        "appleBackground.jpg"), (1200, 800))
     gamewindow.blit(spaceBackground, (0, 0))
     pygame.display.set_caption("TicTacToe")
 

@@ -21,7 +21,8 @@ def menu(gamewindow):
     # Set the name of Display
     pygame.display.set_caption("Main Menu")
     # Set Background - Using a picture
-    menuBackground = pygame.transform.scale(pygame.image.load("education background.jpg"), (1200,800))
+    menuBackground = pygame.transform.scale(pygame.image.load(
+        "education background.jpg"), (1200, 800))
     gamewindow.blit(menuBackground, (0,0))
 
     # Title

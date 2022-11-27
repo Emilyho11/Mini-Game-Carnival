@@ -1,4 +1,4 @@
-import pygame, time, sys
+import pygame, sys
 from array import array
 from random import randrange
 from pygame.locals import *
@@ -20,7 +20,7 @@ WHITE = (255, 255, 255)
 
 # Space Game Function
 def spaceGame(gamewindow):
-    from mainMenu import menu
+    from src.mainMenu import menu
     # Set of questions on planets
     questions = ["What is the hottest planet?",
                  "Which planet has the most moons?",
@@ -71,48 +71,62 @@ def spaceGame(gamewindow):
                 sys.exit()
         # End of for loop
         # Set Background - Using a picture
-        spaceBackground = pygame.transform.scale(pygame.image.load("space background.jfif"), (1200, 800))
+        spaceBackground = pygame.transform.scale(pygame.image.load(
+            "space background.jfif"), (1200, 800))
         gamewindow.blit(spaceBackground, (0, 0))
 
         # Set Planets and their names
-        mercury = pygame.transform.scale(pygame.image.load("mercury.png"), (80, 70))
+        mercury = pygame.transform.scale(pygame.image.load(
+            "mercury.png"), (80, 70))
         gamewindow.blit(mercury, (300, 200))
-        mercurytext = pygame.transform.scale(pygame.image.load("mercurytext.png"), (90, 70))
+        mercurytext = pygame.transform.scale(pygame.image.load(
+            "mercurytext.png"), (90, 70))
         gamewindow.blit(mercurytext, (295, 200))
 
         venus = pygame.transform.scale(pygame.image.load("venus.png"), (80, 80))
         gamewindow.blit(venus, (420, 200))
-        venustext = pygame.transform.scale(pygame.image.load("venustext.png"), (80, 70))
+        venustext = pygame.transform.scale(pygame.image.load(
+            "venustext.png"), (80, 70))
         gamewindow.blit(venustext, (420, 200))
 
         earth = pygame.transform.scale(pygame.image.load("earth.png"), (90, 90))
         gamewindow.blit(earth, (535, 200))
-        earthtext = pygame.transform.scale(pygame.image.load("earthtext.png"), (80, 70))
+        earthtext = pygame.transform.scale(pygame.image.load(
+            "earthtext.png"), (80, 70))
         gamewindow.blit(earthtext, (540, 205))
 
         mars = pygame.transform.scale(pygame.image.load("mars.png"), (100, 100))
         gamewindow.blit(mars, (645, 200))
-        marstext = pygame.transform.scale(pygame.image.load("marstext.png"), (80, 60))
+        marstext = pygame.transform.scale(pygame.image.load(
+            "marstext.png"), (80, 60))
         gamewindow.blit(marstext, (655, 220))
 
-        jupiter = pygame.transform.scale(pygame.image.load("jupiter.png"), (210, 210))
+        jupiter = pygame.transform.scale(pygame.image.load(
+            "jupiter.png"), (210, 210))
         gamewindow.blit(jupiter, (730, 150))
-        jupitertext = pygame.transform.scale(pygame.image.load("jupitertext.png"), (90, 70))
+        jupitertext = pygame.transform.scale(pygame.image.load(
+            "jupitertext.png"), (90, 70))
         gamewindow.blit(jupitertext, (790, 220))
 
-        saturn = pygame.transform.scale(pygame.image.load("saturn.png"), (220, 135))
+        saturn = pygame.transform.scale(pygame.image.load(
+            "saturn.png"), (220, 135))
         gamewindow.blit(saturn, (330, 330))
-        saturntext = pygame.transform.scale(pygame.image.load("saturntext.png"), (90, 70))
+        saturntext = pygame.transform.scale(pygame.image.load(
+            "saturntext.png"), (90, 70))
         gamewindow.blit(saturntext, (400, 340))
 
-        uranus = pygame.transform.scale(pygame.image.load("uranus.png"), (100, 100))
+        uranus = pygame.transform.scale(pygame.image.load(
+            "uranus.png"), (100, 100))
         gamewindow.blit(uranus, (550, 345))
-        uranustext = pygame.transform.scale(pygame.image.load("uranustext.png"), (90, 70))
+        uranustext = pygame.transform.scale(pygame.image.load(
+            "uranustext.png"), (90, 70))
         gamewindow.blit(uranustext, (550, 355))
 
-        neptune = pygame.transform.scale(pygame.image.load("neptune.png"), (110, 110))
+        neptune = pygame.transform.scale(pygame.image.load(
+            "neptune.png"), (110, 110))
         gamewindow.blit(neptune, (700, 350))
-        neptunetext = pygame.transform.scale(pygame.image.load("neptunetext.png"), (100, 80))
+        neptunetext = pygame.transform.scale(pygame.image.load(
+            "neptunetext.png"), (100, 80))
         gamewindow.blit(neptunetext, (710, 370))
 
         # Instruction
@@ -171,7 +185,8 @@ def spaceGame(gamewindow):
 
             if totalSeconds <= 0:
                 # Set Background - Using a picture
-                spaceBackground = pygame.transform.scale(pygame.image.load("solarSystem.jpg"), (1200, 800))
+                spaceBackground = pygame.transform.scale(pygame.image.load(
+                    "solarSystem.jpg"), (1200, 800))
                 gamewindow.blit(spaceBackground, (0, 0))
                 font = pygame.font.Font('freesansbold.ttf', 50)
                 timeOver = font.render('GAME OVER!', True, WHITE)
@@ -273,12 +288,13 @@ def spaceGame(gamewindow):
 
 # Space Instructions Function
 def spaceInstructions(gamewindow):
-    from mainMenu import menu
+    from src.mainMenu import menu
     ORANGE = (249,195,100)
     YELLOW = (249,248,100)
 
     # Set Background - Using a picture
-    spaceBackground = pygame.transform.scale(pygame.image.load("solarSystem.jpg"), (1200, 800))
+    spaceBackground = pygame.transform.scale(pygame.image.load(
+        "solarSystem.jpg"), (1200, 800))
     gamewindow.blit(spaceBackground, (0, 0))
     pygame.display.set_caption("Space Instructions")
     instructionFont = pygame.font.Font('freesansbold.ttf', 40)
@@ -352,11 +368,12 @@ def spaceInstructions(gamewindow):
 
 # Answer page function
 def spaceAnswers(gamewindow):
-    from mainMenu import menu
+    from src.mainMenu import menu
     YELLOW = (249,248,100)
 
     # Set Background - Using a picture
-    spaceBackground = pygame.transform.scale(pygame.image.load("darkSkyBackground.jpg"), (1200, 800))
+    spaceBackground = pygame.transform.scale(pygame.image.load(
+        "darkSkyBackground.jpg"), (1200, 800))
     gamewindow.blit(spaceBackground, (0, 0))
     pygame.display.set_caption("Space Answers")
 
@@ -476,7 +493,7 @@ def spaceAnswers(gamewindow):
 
 # Function for buttons
 def toButtons(gamewindow):
-    from mainMenu import menu
+    from src.mainMenu import menu
     while True:
         pygame.event.get(pygame.MOUSEBUTTONDOWN)
         mouse = pygame.mouse.get_pos()

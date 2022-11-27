@@ -23,7 +23,8 @@ def guessingChoice(gamewindow):
     # Set the name of Display
     pygame.display.set_caption("Guessing Game")
     # Set Background - Using a picture
-    background = pygame.transform.scale(pygame.image.load("questionMarks.jpg"), (1200, 800))
+    background = pygame.transform.scale(pygame.image.load(
+        "questionMarks.jpg"), (1200, 800))
     gamewindow.blit(background, (0, 0))
 
     # Title
@@ -52,22 +53,26 @@ def guessingChoice(gamewindow):
 
         # Button to the animal guessing game
         if 220 + 320 > mouse[0] > 220 and 300 + 220 > mouse[1] > 300:
-            animals = pygame.transform.scale(pygame.image.load("animal.jpg"), (330, 230))
+            animals = pygame.transform.scale(pygame.image.load(
+                "animal.jpg"), (330, 230))
             gamewindow.blit(animals, (220, 300))
             if click[0] == 1:
                 animalGuess(gamewindow)
         else:
-            animals = pygame.transform.scale(pygame.image.load("animal.jpg"), (320, 220))
+            animals = pygame.transform.scale(pygame.image.load(
+                "animal.jpg"), (320, 220))
             gamewindow.blit(animals, (220, 300))
 
         # Button to the Disney guessing game
         if 620 + 320 > mouse[0] > 620 and 300 + 220 > mouse[1] > 300:
-            disneyPic = pygame.transform.scale(pygame.image.load("disney.jpg"), (330, 230))
+            disneyPic = pygame.transform.scale(pygame.image.load(
+                "disney.jpg"), (330, 230))
             gamewindow.blit(disneyPic, (620, 300))
             if click[0] == 1:
                 disneyGuess(gamewindow)
         else:
-            disneyPic = pygame.transform.scale(pygame.image.load("disney.jpg"), (320, 220))
+            disneyPic = pygame.transform.scale(pygame.image.load(
+                "disney.jpg"), (320, 220))
             gamewindow.blit(disneyPic, (620, 300))
         backToMainMenu(gamewindow)
     # End of while loop
@@ -78,7 +83,8 @@ def guessInstructions(gamewindow):
     from reusableFunctions import backToMainMenu
 
     # Set Background - Using a picture
-    guessBackground = pygame.transform.scale(pygame.image.load("animalBackground.jpg"), (1200, 800))
+    guessBackground = pygame.transform.scale(pygame.image.load(
+        "animalBackground.jpg"), (1200, 800))
     gamewindow.blit(guessBackground, (0, 0))
     pygame.display.set_caption("Guessing Game Instructions")
     instructionFont = pygame.font.SysFont('arialrounded', 40)

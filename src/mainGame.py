@@ -48,7 +48,7 @@ def startPage():
 
     # play music
     pygame.mixer.init()
-    pygame.mixer.music.load("song.ogg")
+    pygame.mixer.music.load("../song.ogg")
     pygame.mixer.music.set_volume(0.5)
     # play music over and over again
     pygame.mixer.music.play(-1)
