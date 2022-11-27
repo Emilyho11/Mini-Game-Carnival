@@ -2,47 +2,47 @@ import pygame
 
 # Function that returns a list of animal images
 def animalImageList():
-    tigerPic = pygame.transform.scale(pygame.image.load("tiger.jpg"), (360, 260))
+    tigerPic = pygame.transform.scale(pygame.image.load("images/tiger.jpg"), (360, 260))
     toucanPic = pygame.transform.scale(pygame.image.load(
-        "toucan.jpg"), (360, 260))
+        "images/toucan.jpg"), (360, 260))
     cheetahPic = pygame.transform.scale(pygame.image.load(
-        "cheetah.jpg"), (360, 260))
-    eaglePic = pygame.transform.scale(pygame.image.load("eagle.png"), (360, 260))
-    lionPic = pygame.transform.scale(pygame.image.load("lion.jpg"), (360, 260))
-    catPic = pygame.transform.scale(pygame.image.load("cat.jpg"), (360, 260))
+        "images/cheetah.jpg"), (360, 260))
+    eaglePic = pygame.transform.scale(pygame.image.load("images/eagle.png"), (360, 260))
+    lionPic = pygame.transform.scale(pygame.image.load("images/lion.jpg"), (360, 260))
+    catPic = pygame.transform.scale(pygame.image.load("images/cat.jpg"), (360, 260))
     kangarooPic = pygame.transform.scale(pygame.image.load(
-        "kangaroo.jpg"), (360, 260))
-    cowPic = pygame.transform.scale(pygame.image.load("cow.jpg"), (360, 260))
+        "images/kangaroo.jpg"), (360, 260))
+    cowPic = pygame.transform.scale(pygame.image.load("images/cow.jpg"), (360, 260))
     raccoonPic = pygame.transform.scale(pygame.image.load(
-        "raccoon.jpg"), (360, 260))
+        "images/raccoon.jpg"), (360, 260))
     meerkatPic = pygame.transform.scale(pygame.image.load(
-        "meerkat.jpg"), (360, 260))
-    lemurPic = pygame.transform.scale(pygame.image.load("lemur.jpg"), (360, 260))
-    pigPic = pygame.transform.scale(pygame.image.load("pig.jpg"), (360, 260))
+        "images/meerkat.jpg"), (360, 260))
+    lemurPic = pygame.transform.scale(pygame.image.load("images/lemur.jpg"), (360, 260))
+    pigPic = pygame.transform.scale(pygame.image.load("images/pig.jpg"), (360, 260))
     armadilloPic = pygame.transform.scale(pygame.image.load(
-        "armadillo.jpg"), (360, 260))
-    zebraPic = pygame.transform.scale(pygame.image.load("zebra.jpg"), (360, 260))
+        "images/armadillo.jpg"), (360, 260))
+    zebraPic = pygame.transform.scale(pygame.image.load("images/zebra.jpg"), (360, 260))
     antelopePic = pygame.transform.scale(pygame.image.load(
-        "antelope.jpg"), (360, 260))
-    pandaPic = pygame.transform.scale(pygame.image.load("panda.jpg"), (360, 260))
+        "images/antelope.jpg"), (360, 260))
+    pandaPic = pygame.transform.scale(pygame.image.load("images/panda.jpg"), (360, 260))
     giraffePic = pygame.transform.scale(pygame.image.load(
-        "giraffe.jpg"), (360, 260))
-    owlPic = pygame.transform.scale(pygame.image.load("owl.jpg"), (360, 260))
+        "images/giraffe.jpg"), (360, 260))
+    owlPic = pygame.transform.scale(pygame.image.load("images/owl.jpg"), (360, 260))
     butterflyPic = pygame.transform.scale(pygame.image.load(
-        "butterfly.jpg"), (360, 260))
-    snakePic = pygame.transform.scale(pygame.image.load("snake.jpg"), (360, 260))
+        "images/butterfly.jpg"), (360, 260))
+    snakePic = pygame.transform.scale(pygame.image.load("images/snake.jpg"), (360, 260))
     chameleonPic = pygame.transform.scale(pygame.image.load(
-        "chameleon.jpg"), (360, 260))
-    frogPic = pygame.transform.scale(pygame.image.load("frog.jpg"), (360, 260))
+        "images/chameleon.jpg"), (360, 260))
+    frogPic = pygame.transform.scale(pygame.image.load("images/frog.jpg"), (360, 260))
     turtlePic = pygame.transform.scale(pygame.image.load(
-        "turtle.jpg"), (360, 260))
+        "images/turtle.jpg"), (360, 260))
     hedgehogPic = pygame.transform.scale(pygame.image.load(
-        "hedgehog.png"), (360, 260))
+        "images/hedgehog.png"), (360, 260))
     porcupinePic = pygame.transform.scale(pygame.image.load(
-        "porcupine.jpg"), (360, 260))
+        "images/porcupine.jpg"), (360, 260))
     squirrelPic = pygame.transform.scale(pygame.image.load(
-        "squirrel.jpg"), (360, 260))
-    swanPic = pygame.transform.scale(pygame.image.load("swan.jpg"), (360, 260))
+        "images/squirrel.jpg"), (360, 260))
+    swanPic = pygame.transform.scale(pygame.image.load("images/swan.jpg"), (360, 260))
 
     images = [tigerPic, toucanPic, cheetahPic, eaglePic, lionPic, catPic, kangarooPic, cowPic, raccoonPic,
               meerkatPic, lemurPic, pigPic, armadilloPic, zebraPic, antelopePic, pandaPic, giraffePic, owlPic,
@@ -53,59 +53,59 @@ def animalImageList():
 # Function that returns a list of animal image answers
 def animalImageAnswers():
     tigerPic = pygame.transform.scale(pygame.image.load(
-        "tigerAnswer.jpg"), (410, 290))
+        "images/tigerAnswer.jpg"), (410, 290))
     toucanPic = pygame.transform.scale(pygame.image.load(
-        "toucanAnswer.jpg"), (360, 260))
+        "images/toucanAnswer.jpg"), (360, 260))
     cheetahPic = pygame.transform.scale(pygame.image.load(
-        "cheetahAnswer.jpg"), (360, 310))
+        "images/cheetahAnswer.jpg"), (360, 310))
     eaglePic = pygame.transform.scale(pygame.image.load(
-        "eagleAnswer.jpg"), (360, 260))
+        "images/eagleAnswer.jpg"), (360, 260))
     lionPic = pygame.transform.scale(pygame.image.load(
-        "lionAnswer.jpg"), (360, 300))
+        "images/lionAnswer.jpg"), (360, 300))
     catPic = pygame.transform.scale(pygame.image.load(
-        "catAnswer.jpg"), (390, 290))
+        "images/catAnswer.jpg"), (390, 290))
     kangarooPic = pygame.transform.scale(pygame.image.load(
-        "kangarooAnswer.jpg"), (380, 280))
+        "images/kangarooAnswer.jpg"), (380, 280))
     cowPic = pygame.transform.scale(pygame.image.load(
-        "cowAnswer.jpg"), (360, 260))
+        "images/cowAnswer.jpg"), (360, 260))
     raccoonPic = pygame.transform.scale(pygame.image.load(
-        "raccoonAnswer.jpg"), (360, 260))
+        "images/raccoonAnswer.jpg"), (360, 260))
     meerkatPic = pygame.transform.scale(pygame.image.load(
-        "meerkatAnswer.jpg"), (360, 260))
+        "images/meerkatAnswer.jpg"), (360, 260))
     lemurPic = pygame.transform.scale(pygame.image.load(
-        "lemurAnswer.jpg"), (380, 260))
+        "images/lemurAnswer.jpg"), (380, 260))
     pigPic = pygame.transform.scale(pygame.image.load(
-        "pigAnswer.jpg"), (360, 300))
+        "images/pigAnswer.jpg"), (360, 300))
     armadilloPic = pygame.transform.scale(pygame.image.load(
-        "armadilloAnswer.jpg"), (370, 260))
+        "images/armadilloAnswer.jpg"), (370, 260))
     zebraPic = pygame.transform.scale(pygame.image.load(
-        "zebraAnswer.jpg"), (360, 260))
+        "images/zebraAnswer.jpg"), (360, 260))
     antelopePic = pygame.transform.scale(pygame.image.load(
-        "antelopeAnswer.jpg"), (430, 250))
+        "images/antelopeAnswer.jpg"), (430, 250))
     pandaPic = pygame.transform.scale(pygame.image.load(
-        "pandaAnswer.jpg"), (360, 260))
+        "images/pandaAnswer.jpg"), (360, 260))
     giraffePic = pygame.transform.scale(pygame.image.load(
-        "giraffeAnswer.jpg"), (360, 280))
+        "images/giraffeAnswer.jpg"), (360, 280))
     owlPic = pygame.transform.scale(pygame.image.load(
-        "owlAnswer.jpg"), (360, 260))
+        "images/owlAnswer.jpg"), (360, 260))
     butterflyPic = pygame.transform.scale(pygame.image.load(
-        "butterflyAnswer.jpg"), (360, 260))
+        "images/butterflyAnswer.jpg"), (360, 260))
     snakePic = pygame.transform.scale(pygame.image.load(
-        "snakeAnswer.jpg"), (380, 280))
+        "images/snakeAnswer.jpg"), (380, 280))
     chameleonPic = pygame.transform.scale(pygame.image.load(
-        "chameleonAnswer.jpg"), (420, 260))
+        "images/chameleonAnswer.jpg"), (420, 260))
     frogPic = pygame.transform.scale(pygame.image.load(
-        "frogAnswer.jpg"), (360, 260))
+        "images/frogAnswer.jpg"), (360, 260))
     turtlePic = pygame.transform.scale(pygame.image.load(
-        "turtleAnswer.png"), (420, 290))
+        "images/turtleAnswer.png"), (420, 290))
     hedgehogPic = pygame.transform.scale(pygame.image.load(
-        "hedgehogAnswer.jpg"), (380, 280))
+        "images/hedgehogAnswer.jpg"), (380, 280))
     porcupinePic = pygame.transform.scale(pygame.image.load(
-        "porcupineAnswer.jpg"), (360, 260))
+        "images/porcupineAnswer.jpg"), (360, 260))
     squirrelPic = pygame.transform.scale(pygame.image.load(
-        "squirrelAnswer.jpg"), (360, 260))
+        "images/squirrelAnswer.jpg"), (360, 260))
     swanPic = pygame.transform.scale(pygame.image.load(
-        "swanAnswer.jpg"), (360, 260))
+        "images/swanAnswer.jpg"), (360, 260))
 
     images = [tigerPic, toucanPic, cheetahPic, eaglePic, lionPic, catPic, kangarooPic, cowPic, raccoonPic,
             meerkatPic, lemurPic, pigPic, armadilloPic, zebraPic, antelopePic, pandaPic, giraffePic, owlPic,
@@ -115,88 +115,88 @@ def animalImageAnswers():
 
 # Function that returns a list of disney images
 def disneyImageList():
-    stitch = pygame.transform.scale(pygame.image.load("stitch.png"), (360, 260))
+    stitch = pygame.transform.scale(pygame.image.load("images/stitch.png"), (360, 260))
     cinderella = pygame.transform.scale(pygame.image.load(
-        "cinderella.jpg"), (360, 260))
-    ariel = pygame.transform.scale(pygame.image.load("ariel.png"), (380, 280))
-    beast = pygame.transform.scale(pygame.image.load("beast.jpg"), (310, 290))
-    genie = pygame.transform.scale(pygame.image.load("genie.jpg"), (360, 260))
-    abu = pygame.transform.scale(pygame.image.load("abu.jpg"), (360, 260))
-    anna = pygame.transform.scale(pygame.image.load("anna.jpeg"), (360, 270))
-    elsa = pygame.transform.scale(pygame.image.load("elsa.jpg"), (360, 260))
-    bambi = pygame.transform.scale(pygame.image.load("bambi.png"), (380, 280))
+        "images/cinderella.jpg"), (360, 260))
+    ariel = pygame.transform.scale(pygame.image.load("images/ariel.png"), (380, 280))
+    beast = pygame.transform.scale(pygame.image.load("images/beast.jpg"), (310, 290))
+    genie = pygame.transform.scale(pygame.image.load("images/genie.jpg"), (360, 260))
+    abu = pygame.transform.scale(pygame.image.load("images/abu.jpg"), (360, 260))
+    anna = pygame.transform.scale(pygame.image.load("images/anna.jpeg"), (360, 270))
+    elsa = pygame.transform.scale(pygame.image.load("images/elsa.jpg"), (360, 260))
+    bambi = pygame.transform.scale(pygame.image.load("images/bambi.png"), (380, 280))
     pinocchio = pygame.transform.scale(pygame.image.load(
-        "pinocchio.jpg"), (360, 260))
+        "images/pinocchio.jpg"), (360, 260))
     peterPan = pygame.transform.scale(pygame.image.load(
-        "peterPan.jpg"), (360, 260))
+        "images/peterPan.jpg"), (360, 260))
     captainHook = pygame.transform.scale(pygame.image.load(
-        "captainHook.png"), (360, 260))
-    dumbo = pygame.transform.scale(pygame.image.load("dumbo.jpg"), (360, 260))
+        "images/captainHook.png"), (360, 260))
+    dumbo = pygame.transform.scale(pygame.image.load("images/dumbo.jpg"), (360, 260))
     cheshire = pygame.transform.scale(pygame.image.load(
-        "cheshireCat.jpg"), (360, 260))
-    mulan = pygame.transform.scale(pygame.image.load("mulan.jpg"), (360, 260))
-    belle = pygame.transform.scale(pygame.image.load("belle.jpg"), (360, 260))
-    tarzan = pygame.transform.scale(pygame.image.load("tarzan.jpg"), (360, 280))
+        "images/cheshireCat.jpg"), (360, 260))
+    mulan = pygame.transform.scale(pygame.image.load("images/mulan.jpg"), (360, 260))
+    belle = pygame.transform.scale(pygame.image.load("images/belle.jpg"), (360, 260))
+    tarzan = pygame.transform.scale(pygame.image.load("images/tarzan.jpg"), (360, 280))
     mickey = pygame.transform.scale(pygame.image.load(
-        "mickeyMouse.jpg"), (360, 260))
-    goofy = pygame.transform.scale(pygame.image.load("goofy.jpg"), (370, 270))
-    pluto = pygame.transform.scale(pygame.image.load("pluto.png"), (360, 260))
+        "images/mickeyMouse.jpg"), (360, 260))
+    goofy = pygame.transform.scale(pygame.image.load("images/goofy.jpg"), (370, 270))
+    pluto = pygame.transform.scale(pygame.image.load("images/pluto.png"), (360, 260))
     rapunzel = pygame.transform.scale(pygame.image.load(
-        "rapunzel.png"), (360, 260))
-    gus = pygame.transform.scale(pygame.image.load("gus.jpg"), (270, 320))
-    hades = pygame.transform.scale(pygame.image.load("hades.jpg"), (410, 270))
-    nemo = pygame.transform.scale(pygame.image.load("nemo.png"), (360, 280))
-    baymax = pygame.transform.scale(pygame.image.load("baymax.png"), (320, 320))
-    jafar = pygame.transform.scale(pygame.image.load("jafar.png"), (360, 260))
-    lady = pygame.transform.scale(pygame.image.load("lady.jpg"), (360, 260))
+        "images/rapunzel.png"), (360, 260))
+    gus = pygame.transform.scale(pygame.image.load("images/gus.jpg"), (270, 320))
+    hades = pygame.transform.scale(pygame.image.load("images/hades.jpg"), (410, 270))
+    nemo = pygame.transform.scale(pygame.image.load("images/nemo.png"), (360, 280))
+    baymax = pygame.transform.scale(pygame.image.load("images/baymax.png"), (320, 320))
+    jafar = pygame.transform.scale(pygame.image.load("images/jafar.png"), (360, 260))
+    lady = pygame.transform.scale(pygame.image.load("images/lady.jpg"), (360, 260))
     ladyTremaine = pygame.transform.scale(pygame.image.load(
-        "ladyTremaine.jpg"), (360, 260))
-    lumiere = pygame.transform.scale(pygame.image.load("lumiere.jpg"), (330, 300))
+        "images/ladyTremaine.jpg"), (360, 260))
+    lumiere = pygame.transform.scale(pygame.image.load("images/lumiere.jpg"), (330, 300))
     carpet = pygame.transform.scale(pygame.image.load(
-        "magicCarpet.png"), (360, 260))
+        "images/magicCarpet.png"), (360, 260))
     maleficent = pygame.transform.scale(pygame.image.load(
-        "maleficent.jpg"), (370, 270))
+        "images/maleficent.jpg"), (370, 270))
     maryPoppins = pygame.transform.scale(pygame.image.load(
-        "marryPoppins.png"), (360, 260))
-    moana = pygame.transform.scale(pygame.image.load("moana.jpg"), (360, 260))
-    mushu = pygame.transform.scale(pygame.image.load("mushu.jpg"), (360, 260))
-    olaf = pygame.transform.scale(pygame.image.load("olaf.jfif"), (380, 280))
-    pumbaa = pygame.transform.scale(pygame.image.load("pumbaa.jpg"), (360, 260))
-    timon = pygame.transform.scale(pygame.image.load("timon.png"), (300, 320))
-    winnie = pygame.transform.scale(pygame.image.load("winnie.png"), (360, 260))
-    rafiki = pygame.transform.scale(pygame.image.load("rafiki.jpg"), (360, 260))
+        "images/marryPoppins.png"), (360, 260))
+    moana = pygame.transform.scale(pygame.image.load("images/moana.jpg"), (360, 260))
+    mushu = pygame.transform.scale(pygame.image.load("images/mushu.jpg"), (360, 260))
+    olaf = pygame.transform.scale(pygame.image.load("images/olaf.jfif"), (380, 280))
+    pumbaa = pygame.transform.scale(pygame.image.load("images/pumbaa.jpg"), (360, 260))
+    timon = pygame.transform.scale(pygame.image.load("images/timon.png"), (300, 320))
+    winnie = pygame.transform.scale(pygame.image.load("images/winnie.png"), (360, 260))
+    rafiki = pygame.transform.scale(pygame.image.load("images/rafiki.jpg"), (360, 260))
     sebastian = pygame.transform.scale(pygame.image.load(
-        "sebastian.jpeg"), (360, 260))
+        "images/sebastian.jpeg"), (360, 260))
     flounder = pygame.transform.scale(pygame.image.load(
-        "flounder.jpg"), (380, 280))
-    sven = pygame.transform.scale(pygame.image.load("sven.jpg"), (380, 280))
-    tigger = pygame.transform.scale(pygame.image.load("tigger.jpg"), (360, 260))
+        "images/flounder.jpg"), (380, 280))
+    sven = pygame.transform.scale(pygame.image.load("images/sven.jpg"), (380, 280))
+    tigger = pygame.transform.scale(pygame.image.load("images/tigger.jpg"), (360, 260))
     tinkerBell = pygame.transform.scale(pygame.image.load(
-        "tinkerbell.jpeg"), (360, 260))
-    tramp = pygame.transform.scale(pygame.image.load("tramp.jpg"), (360, 260))
-    ursula = pygame.transform.scale(pygame.image.load("ursula.jpg"), (380, 280))
+        "images/tinkerbell.jpeg"), (360, 260))
+    tramp = pygame.transform.scale(pygame.image.load("images/tramp.jpg"), (360, 260))
+    ursula = pygame.transform.scale(pygame.image.load("images/ursula.jpg"), (380, 280))
     wreck = pygame.transform.scale(pygame.image.load(
-        "wreckitRalph.jpg"), (360, 260))
-    buzz = pygame.transform.scale(pygame.image.load("buzz.jfif"), (360, 260))
-    woody = pygame.transform.scale(pygame.image.load("woody.jpg"), (360, 260))
-    aladdin = pygame.transform.scale(pygame.image.load("aladdin.jpg"), (360, 260))
-    dory = pygame.transform.scale(pygame.image.load("dori.jpg"), (380, 260))
-    walle = pygame.transform.scale(pygame.image.load("walle.jpg"), (360, 260))
-    mike = pygame.transform.scale(pygame.image.load("mike.png"), (360, 280))
-    yoda = pygame.transform.scale(pygame.image.load("yoda.jpg"), (360, 260))
-    joy = pygame.transform.scale(pygame.image.load("joy.png"), (380, 280))
-    sadness = pygame.transform.scale(pygame.image.load("sadness.jpg"), (360, 260))
-    minnie = pygame.transform.scale(pygame.image.load("minnie.jpg"), (360, 260))
-    merida = pygame.transform.scale(pygame.image.load("merida.jpg"), (360, 260))
-    maui = pygame.transform.scale(pygame.image.load("maui.jpg"), (320, 310))
-    mcqueen = pygame.transform.scale(pygame.image.load("mcqueen.jpg"), (360, 260))
-    mater = pygame.transform.scale(pygame.image.load("mater.jpg"), (360, 260))
+        "images/wreckitRalph.jpg"), (360, 260))
+    buzz = pygame.transform.scale(pygame.image.load("images/buzz.jfif"), (360, 260))
+    woody = pygame.transform.scale(pygame.image.load("images/woody.jpg"), (360, 260))
+    aladdin = pygame.transform.scale(pygame.image.load("images/aladdin.jpg"), (360, 260))
+    dory = pygame.transform.scale(pygame.image.load("images/dori.jpg"), (380, 260))
+    walle = pygame.transform.scale(pygame.image.load("images/walle.jpg"), (360, 260))
+    mike = pygame.transform.scale(pygame.image.load("images/mike.png"), (360, 280))
+    yoda = pygame.transform.scale(pygame.image.load("images/yoda.jpg"), (360, 260))
+    joy = pygame.transform.scale(pygame.image.load("images/joy.png"), (380, 280))
+    sadness = pygame.transform.scale(pygame.image.load("images/sadness.jpg"), (360, 260))
+    minnie = pygame.transform.scale(pygame.image.load("images/minnie.jpg"), (360, 260))
+    merida = pygame.transform.scale(pygame.image.load("images/merida.jpg"), (360, 260))
+    maui = pygame.transform.scale(pygame.image.load("images/maui.jpg"), (320, 310))
+    mcqueen = pygame.transform.scale(pygame.image.load("images/mcqueen.jpg"), (360, 260))
+    mater = pygame.transform.scale(pygame.image.load("images/mater.jpg"), (360, 260))
     chewbacca = pygame.transform.scale(pygame.image.load(
-        "chewbacca.jpg"), (360, 260))
-    chip = pygame.transform.scale(pygame.image.load("chip.jpg"), (360, 260))
-    forky = pygame.transform.scale(pygame.image.load("forky.jpg"), (380, 280))
+        "images/chewbacca.jpg"), (360, 260))
+    chip = pygame.transform.scale(pygame.image.load("images/chip.jpg"), (360, 260))
+    forky = pygame.transform.scale(pygame.image.load("images/forky.jpg"), (380, 280))
     hercules = pygame.transform.scale(pygame.image.load(
-        "hercules.png"), (380, 260))
+        "images/hercules.png"), (380, 260))
 
     images = [stitch, cinderella, ariel, beast, genie, abu, anna, elsa, bambi, pinocchio, peterPan, captainHook, dumbo,
               cheshire, mulan, belle, tarzan, mickey, goofy, pluto, rapunzel, gus, hades, nemo, baymax, jafar, lady,
@@ -209,120 +209,120 @@ def disneyImageList():
 # Function that returns a list of disney image answers
 def disneyImageAnswers():
     stitch = pygame.transform.scale(pygame.image.load(
-        "stitchAnswer.png"), (300, 350))
+        "images/stitchAnswer.png"), (300, 350))
     cinderella = pygame.transform.scale(pygame.image.load(
-        "cinderellaAnswer.jpg"), (460, 280))
+        "images/cinderellaAnswer.jpg"), (460, 280))
     ariel = pygame.transform.scale(pygame.image.load(
-        "arielAnswer.jpg"), (290, 330))
+        "images/arielAnswer.jpg"), (290, 330))
     beast = pygame.transform.scale(pygame.image.load(
-        "beastAnswer.png"), (410, 320))
+        "images/beastAnswer.png"), (410, 320))
     genie = pygame.transform.scale(pygame.image.load(
-        "genieAnswer.jpg"), (380, 280))
-    abu = pygame.transform.scale(pygame.image.load("abuAnswer.jpg"), (470, 280))
-    anna = pygame.transform.scale(pygame.image.load("annaAnswer.jpg"), (320, 340))
-    elsa = pygame.transform.scale(pygame.image.load("elsaAnswer.jpg"), (350, 330))
+        "images/genieAnswer.jpg"), (380, 280))
+    abu = pygame.transform.scale(pygame.image.load("images/abuAnswer.jpg"), (470, 280))
+    anna = pygame.transform.scale(pygame.image.load("images/annaAnswer.jpg"), (320, 340))
+    elsa = pygame.transform.scale(pygame.image.load("images/elsaAnswer.jpg"), (350, 330))
     bambi = pygame.transform.scale(pygame.image.load(
-        "bambiAnswer.jpg"), (390, 290))
+        "images/bambiAnswer.jpg"), (390, 290))
     pinocchio = pygame.transform.scale(pygame.image.load(
-        "pinocchioAnswer.png"), (350, 310))
+        "images/pinocchioAnswer.png"), (350, 310))
     peterPan = pygame.transform.scale(pygame.image.load(
-        "peterPanAnswer.jfif"), (420, 290))
+        "images/peterPanAnswer.jfif"), (420, 290))
     captainHook = pygame.transform.scale(pygame.image.load(
-        "captainHookAnswer.jpg"), (380, 280))
+        "images/captainHookAnswer.jpg"), (380, 280))
     dumbo = pygame.transform.scale(pygame.image.load(
-        "dumboAnswer.jpg"), (340, 340))
+        "images/dumboAnswer.jpg"), (340, 340))
     cheshire = pygame.transform.scale(pygame.image.load(
-        "cheshireCatAnswer.jpg"), (380, 280))
+        "images/cheshireCatAnswer.jpg"), (380, 280))
     mulan = pygame.transform.scale(pygame.image.load(
-        "mulanAnswer.jpg"), (390, 310))
+        "images/mulanAnswer.jpg"), (390, 310))
     belle = pygame.transform.scale(pygame.image.load(
-        "belleAnswer.png"), (300, 350))
+        "images/belleAnswer.png"), (300, 350))
     tarzan = pygame.transform.scale(pygame.image.load(
-        "tarzanAnswer.jpg"), (370, 300))
+        "images/tarzanAnswer.jpg"), (370, 300))
     mickey = pygame.transform.scale(pygame.image.load(
-        "mickeyMouseAnswer.jfif"), (500, 310))
+        "images/mickeyMouseAnswer.jfif"), (500, 310))
     goofy = pygame.transform.scale(pygame.image.load(
-        "goofyAnswer.png"), (340, 310))
+        "images/goofyAnswer.png"), (340, 310))
     pluto = pygame.transform.scale(pygame.image.load(
-        "plutoAnswer.jpg"), (390, 280))
+        "images/plutoAnswer.jpg"), (390, 280))
     rapunzel = pygame.transform.scale(pygame.image.load(
-        "rapunzelAnswer.jpg"), (390, 320))
-    gus = pygame.transform.scale(pygame.image.load("gusAnswer.jpg"), (300, 330))
+        "images/rapunzelAnswer.jpg"), (390, 320))
+    gus = pygame.transform.scale(pygame.image.load("images/gusAnswer.jpg"), (300, 330))
     hades = pygame.transform.scale(pygame.image.load(
-        "hadesAnswer.jpg"), (400, 280))
-    nemo = pygame.transform.scale(pygame.image.load("nemoAnswer.png"), (390, 290))
+        "images/hadesAnswer.jpg"), (400, 280))
+    nemo = pygame.transform.scale(pygame.image.load("images/nemoAnswer.png"), (390, 290))
     baymax = pygame.transform.scale(pygame.image.load(
-        "baymaxAnswer.jpg"), (330, 330))
+        "images/baymaxAnswer.jpg"), (330, 330))
     jafar = pygame.transform.scale(pygame.image.load(
-        "jafarAnswer.jpg"), (440, 280))
-    lady = pygame.transform.scale(pygame.image.load("ladyAnswer.jpg"), (350, 290))
+        "images/jafarAnswer.jpg"), (440, 280))
+    lady = pygame.transform.scale(pygame.image.load("images/ladyAnswer.jpg"), (350, 290))
     ladyTremaine = pygame.transform.scale(pygame.image.load(
-        "ladyTremaineAnswer.jpg"), (410, 290))
+        "images/ladyTremaineAnswer.jpg"), (410, 290))
     lumiere = pygame.transform.scale(pygame.image.load(
-        "lumiereAnswer.jpg"), (460, 260))
+        "images/lumiereAnswer.jpg"), (460, 260))
     carpet = pygame.transform.scale(pygame.image.load(
-        "magicCarpetAnswer.jpg"), (360, 300))
+        "images/magicCarpetAnswer.jpg"), (360, 300))
     maleficent = pygame.transform.scale(pygame.image.load(
-        "maleficentAnswer.jpg"), (370, 320))
+        "images/maleficentAnswer.jpg"), (370, 320))
     maryPoppins = pygame.transform.scale(pygame.image.load(
-        "marryPoppinsAnswer.jpg"), (380, 280))
+        "images/marryPoppinsAnswer.jpg"), (380, 280))
     moana = pygame.transform.scale(pygame.image.load(
-        "moanaAnswer.jpg"), (320, 330))
+        "images/moanaAnswer.jpg"), (320, 330))
     mushu = pygame.transform.scale(pygame.image.load(
-        "mushuAnswer.png"), (380, 280))
-    olaf = pygame.transform.scale(pygame.image.load("olafAnswer.jpg"), (380, 280))
+        "images/mushuAnswer.png"), (380, 280))
+    olaf = pygame.transform.scale(pygame.image.load("images/olafAnswer.jpg"), (380, 280))
     pumbaa = pygame.transform.scale(pygame.image.load(
-        "pumbaaAnswer.jpg"), (360, 350))
+        "images/pumbaaAnswer.jpg"), (360, 350))
     timon = pygame.transform.scale(pygame.image.load(
-        "timonAnswer.jpg"), (260, 330))
+        "images/timonAnswer.jpg"), (260, 330))
     winnie = pygame.transform.scale(pygame.image.load(
-        "winnieAnswer.jpg"), (380, 280))
+        "images/winnieAnswer.jpg"), (380, 280))
     rafiki = pygame.transform.scale(pygame.image.load(
-        "rafikiAnswer.jpg"), (380, 280))
+        "images/rafikiAnswer.jpg"), (380, 280))
     sebastian = pygame.transform.scale(pygame.image.load(
-        "sebastianAnswer.png"), (380, 280))
+        "images/sebastianAnswer.png"), (380, 280))
     flounder = pygame.transform.scale(pygame.image.load(
-        "flounderAnswer.jpg"), (370, 290))
-    sven = pygame.transform.scale(pygame.image.load("svenAnswer.jpg"), (390, 290))
+        "images/flounderAnswer.jpg"), (370, 290))
+    sven = pygame.transform.scale(pygame.image.load("images/svenAnswer.jpg"), (390, 290))
     tigger = pygame.transform.scale(pygame.image.load(
-        "tiggerAnswer.jpg"), (380, 280))
+        "images/tiggerAnswer.jpg"), (380, 280))
     tinkerBell = pygame.transform.scale(pygame.image.load(
-        "tinkerbellAnswer.png"), (380, 350))
+        "images/tinkerbellAnswer.png"), (380, 350))
     tramp = pygame.transform.scale(pygame.image.load(
-        "trampAnswer.png"), (320, 340))
+        "images/trampAnswer.png"), (320, 340))
     ursula = pygame.transform.scale(pygame.image.load(
-        "ursulaAnswer.png"), (380, 280))
+        "images/ursulaAnswer.png"), (380, 280))
     wreck = pygame.transform.scale(pygame.image.load(
-        "wreckitRalphAnswer.png"), (360, 280))
-    buzz = pygame.transform.scale(pygame.image.load("buzzAnswer.jpg"), (390, 330))
+        "images/wreckitRalphAnswer.png"), (360, 280))
+    buzz = pygame.transform.scale(pygame.image.load("images/buzzAnswer.jpg"), (390, 330))
     woody = pygame.transform.scale(pygame.image.load(
-        "woodyAnswer.jpg"), (380, 280))
+        "images/woodyAnswer.jpg"), (380, 280))
     aladdin = pygame.transform.scale(pygame.image.load(
-        "aladdinAnswer.jpg"), (350, 310))
-    dory = pygame.transform.scale(pygame.image.load("doriAnswer.jpg"), (420, 290))
+        "images/aladdinAnswer.jpg"), (350, 310))
+    dory = pygame.transform.scale(pygame.image.load("images/doriAnswer.jpg"), (420, 290))
     walle = pygame.transform.scale(pygame.image.load(
-        "walleAnswer.jpg"), (380, 280))
-    mike = pygame.transform.scale(pygame.image.load("mikeAnswer.jpg"), (370, 270))
-    yoda = pygame.transform.scale(pygame.image.load("yodaAnswer.jpg"), (340, 350))
-    joy = pygame.transform.scale(pygame.image.load("joyAnswer.jpg"), (390, 290))
+        "images/walleAnswer.jpg"), (380, 280))
+    mike = pygame.transform.scale(pygame.image.load("images/mikeAnswer.jpg"), (370, 270))
+    yoda = pygame.transform.scale(pygame.image.load("images/yodaAnswer.jpg"), (340, 350))
+    joy = pygame.transform.scale(pygame.image.load("images/joyAnswer.jpg"), (390, 290))
     sadness = pygame.transform.scale(pygame.image.load(
-        "sadnessAnswer.jpg"), (380, 290))
+        "images/sadnessAnswer.jpg"), (380, 290))
     minnie = pygame.transform.scale(pygame.image.load(
-        "minnieAnswer.jpg"), (360, 290))
+        "images/minnieAnswer.jpg"), (360, 290))
     merida = pygame.transform.scale(pygame.image.load(
-        "meridaAnswer.jfif"), (360, 290))
-    maui = pygame.transform.scale(pygame.image.load("mauiAnswer.jpg"), (300, 320))
+        "images/meridaAnswer.jfif"), (360, 290))
+    maui = pygame.transform.scale(pygame.image.load("images/mauiAnswer.jpg"), (300, 320))
     mcqueen = pygame.transform.scale(pygame.image.load(
-        "mcqueenAnswer.jpg"), (430, 290))
+        "images/mcqueenAnswer.jpg"), (430, 290))
     mater = pygame.transform.scale(pygame.image.load(
-        "materAnswer.jpg"), (400, 300))
+        "images/materAnswer.jpg"), (400, 300))
     chewbacca = pygame.transform.scale(pygame.image.load(
-        "chewbaccaAnswer.jpg"), (430, 280))
-    chip = pygame.transform.scale(pygame.image.load("chipAnswer.jpg"), (390, 290))
+        "images/chewbaccaAnswer.jpg"), (430, 280))
+    chip = pygame.transform.scale(pygame.image.load("images/chipAnswer.jpg"), (390, 290))
     forky = pygame.transform.scale(pygame.image.load(
-        "forkyAnswer.jpg"), (390, 300))
+        "images/forkyAnswer.jpg"), (390, 300))
     hercules = pygame.transform.scale(pygame.image.load(
-        "herculesAnswer.png"), (330, 350))
+        "images/herculesAnswer.png"), (330, 350))
 
     images = [stitch, cinderella, ariel, beast, genie, abu, anna, elsa, bambi, pinocchio, peterPan, captainHook, dumbo,
               cheshire, mulan, belle, tarzan, mickey, goofy, pluto, rapunzel, gus, hades, nemo, baymax, jafar, lady,
@@ -334,29 +334,29 @@ def disneyImageAnswers():
 
 # Function that returns a list of Character/Player images
 def flappyImages():
-    bird = pygame.transform.scale(pygame.image.load("b1.png"), (80, 80))
+    bird = pygame.transform.scale(pygame.image.load("images/b1.png"), (80, 80))
     angryBird = pygame.transform.scale(pygame.image.load(
-        "angryBird.png"), (60, 60))
-    whale = pygame.transform.scale(pygame.image.load("whale.png"), (120, 80))
+        "images/angryBird.png"), (60, 60))
+    whale = pygame.transform.scale(pygame.image.load("images/whale.png"), (120, 80))
     snake = pygame.transform.scale(pygame.image.load(
-        "flappySnake.png"), (80, 80))
+        "images/flappySnake.png"), (80, 80))
     flappyBird = pygame.transform.scale(pygame.image.load(
-        "flappyBird.png"), (120, 60))
-    sheep = pygame.transform.scale(pygame.image.load("sheep.png"), (100, 70))
-    seal = pygame.transform.scale(pygame.image.load("seal.png"), (70, 70))
+        "images/flappyBird.png"), (120, 60))
+    sheep = pygame.transform.scale(pygame.image.load("images/sheep.png"), (100, 70))
+    seal = pygame.transform.scale(pygame.image.load("images/seal.png"), (70, 70))
     hedgehog = pygame.transform.scale(pygame.image.load(
-        "flappyHedgehog.png"), (120, 100))
-    parrot = pygame.transform.scale(pygame.image.load("parrot.png"), (80, 80))
-    hen = pygame.transform.scale(pygame.image.load("flappyHen.png"), (90, 90))
-    fly = pygame.transform.scale(pygame.image.load("flappyFly.png"), (90, 90))
-    star = pygame.transform.scale(pygame.image.load("star.png"), (100, 100))
+        "images/flappyHedgehog.png"), (120, 100))
+    parrot = pygame.transform.scale(pygame.image.load("images/parrot.png"), (80, 80))
+    hen = pygame.transform.scale(pygame.image.load("images/flappyHen.png"), (90, 90))
+    fly = pygame.transform.scale(pygame.image.load("images/flappyFly.png"), (90, 90))
+    star = pygame.transform.scale(pygame.image.load("images/star.png"), (100, 100))
     pinkBird = pygame.transform.scale(pygame.image.load(
-        "pinkBird.png"), (100, 100))
-    bee = pygame.transform.scale(pygame.image.load("bee.jpg"), (100, 100))
-    cat = pygame.transform.scale(pygame.image.load("flappyCat.png"), (100, 100))
+        "images/pinkBird.png"), (100, 100))
+    bee = pygame.transform.scale(pygame.image.load("images/bee.jpg"), (100, 100))
+    cat = pygame.transform.scale(pygame.image.load("images/flappyCat.png"), (100, 100))
     penguin = pygame.transform.scale(pygame.image.load(
-        "flappyPing.jpg"), (100, 100))
-    pig = pygame.transform.scale(pygame.image.load("flyingPig.png"), (100, 100))
+        "images/flappyPing.jpg"), (100, 100))
+    pig = pygame.transform.scale(pygame.image.load("images/flyingPig.png"), (100, 100))
 
     images = [bird, angryBird, whale, snake, flappyBird, sheep, seal, hedgehog, parrot, hen, fly, star,
               pinkBird, bee, cat, penguin, pig]

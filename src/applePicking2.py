@@ -63,13 +63,13 @@ def appleScreen(gamewindow):
     gamewindow.blit(explanation, Explanation)
 
     # Trees
-    tree = pygame.transform.scale(pygame.image.load("tree.png"), (400, 500))
+    tree = pygame.transform.scale(pygame.image.load("images/tree.png"), (400, 500))
     gamewindow.blit(tree, (620, 150))
     for appletree in range(2):
         gamewindow.blit(tree, (230 + appletree * 190, 150))
 
     # Apple Picking Basket
-    basket = pygame.transform.scale(pygame.image.load("basket.png"), (150, 150))
+    basket = pygame.transform.scale(pygame.image.load("images/basket.png"), (150, 150))
     gamewindow.blit(basket, (400, 500))
     gamewindow.blit(basket, (700, 500))
     pygame.display.update()
@@ -95,7 +95,7 @@ def applePicking(gamewindow):
                 if appleSelected == mathAnswers[i]:
                     gamewindow.fill(BLUE)
                     congratsBackground = pygame.transform.scale(pygame.image.load(
-                        "congratsBackground.png"),
+                        "images/congratsBackground.png"),
                                                                 (1200, 800))
                     gamewindow.blit(congratsBackground, (0, 0))
                     font = pygame.font.Font('freesansbold.ttf', 60)
@@ -115,7 +115,7 @@ def applePicking(gamewindow):
     gamewindow.blit(questionone, Questionone)
 
     # Apples
-    apple = pygame.transform.scale(pygame.image.load("apple.png"), (50, 50))
+    apple = pygame.transform.scale(pygame.image.load("images/apple.png"), (50, 50))
     for items in range(len(appleLocationX)):
         gamewindow.blit(apple, (appleLocationX[items], appleLocationY[items]))
 
@@ -188,7 +188,7 @@ def appleInstructions(gamewindow):
     from reusableFunctions import backToMainMenu
     # Set Background - Using a picture
     spaceBackground = pygame.transform.scale(pygame.image.load(
-        "appleBackground.jpg"), (1200, 800))
+        "images/appleBackground.jpg"), (1200, 800))
     gamewindow.blit(spaceBackground, (0, 0))
     pygame.display.set_caption("TicTacToe")
 

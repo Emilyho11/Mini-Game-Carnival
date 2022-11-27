@@ -30,7 +30,7 @@ def animalScreen(gamewindow):
     gamewindow.fill(BLUE)
     # Set Background - Using a picture
     background = pygame.transform.scale(pygame.image.load(
-        "animalGuessingBackground.jpg"), (1200, 800))
+        "images/animalGuessingBackground.jpg"), (1200, 800))
     gamewindow.blit(background, (0, 0))
 
     # Title
@@ -127,7 +127,7 @@ def animalGuess(gamewindow):
     else:
         # Set Background - Using a picture
         overBackground = pygame.transform.scale(pygame.image.load(
-            "animalBackground.jpg"), (1200, 800))
+            "images/animalBackground.jpg"), (1200, 800))
         gamewindow.blit(overBackground, (0, 0))
         font = pygame.font.Font('freesansbold.ttf', 50)
         timeOver = font.render('GAME OVER!', True, WHITE)
@@ -182,7 +182,7 @@ def animalGuess(gamewindow):
                                 if text.capitalize() == answers[i]:
                                     gamewindow.fill(LIGHTGREEN)
                                     congratsBackground = pygame.transform.scale(pygame.image.load(
-                                        "congratsBackground.png"), (1200, 800)).convert_alpha()
+                                        "images/congratsBackground.png"), (1200, 800)).convert_alpha()
                                     gamewindow.blit(congratsBackground, (0, 0))
                                     font = pygame.font.Font('freesansbold.ttf', 60)
                                     correct = font.render('Correct!', True, BLACK)

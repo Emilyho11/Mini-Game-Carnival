@@ -43,7 +43,8 @@ def startPage():
     pygame.display.set_caption("START Page")
 
     # Set Background Image
-    startBackground = pygame.transform.scale(pygame.image.load("startBackground.jpg"), (1200, 800))
+    startBackground = pygame.transform.scale(pygame.image.load(
+        "images/startBackground.jpg"), (1200, 800))
     gamewindow.blit(startBackground, (0, 0))
 
     # play music

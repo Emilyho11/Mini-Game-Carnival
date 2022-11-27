@@ -40,7 +40,7 @@ def disneyScreen(gamewindow):
     pygame.display.set_caption("Disney Guessing Game")
     # Set Background - Using a picture
     background = pygame.transform.scale(pygame.image.load(
-        "disneyBackground.jpeg"), (1200, 800))
+        "images/disneyBackground.jpeg"), (1200, 800))
     gamewindow.blit(background, (0, 0))
 
     # Title
@@ -111,7 +111,7 @@ def disneyGuess(gamewindow):
     else:
         # Set Background - Using a picture
         overBackground = pygame.transform.scale(pygame.image.load(
-            "disneyBackground.jpeg"), (1200, 800))
+            "images/disneyBackground.jpeg"), (1200, 800))
         gamewindow.blit(overBackground, (0, 0))
         font = pygame.font.SysFont('constantia', 60)
         timeOver = font.render('GAME OVER!', True, BLACK)
@@ -164,7 +164,7 @@ def disneyGuess(gamewindow):
                                     # Set background
                                     gamewindow.fill(BLUE)
                                     congratsBackground = pygame.transform.scale(pygame.image.load(
-                                        "congratsBackground.png"), (1200, 800))
+                                        "images/congratsBackground.png"), (1200, 800))
                                     gamewindow.blit(congratsBackground, (0, 0))
                                     font = pygame.font.Font('freesansbold.ttf', 60)
                                     correct = font.render('Correct!', True, BLACK)

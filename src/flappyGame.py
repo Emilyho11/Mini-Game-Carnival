@@ -150,7 +150,7 @@ def flappyGame():
         # End of for loop
         # Add background image
         easyBackground = pygame.transform.scale(pygame.image.load(
-            "flappyBackground.png"), (1200, 800))
+            "images/flappyBackground.png"), (1200, 800))
         gamewindow.blit(easyBackground, (0, 0))
         pygame.draw.rect(gamewindow, DARKGREY, (0, 735, 1200, 75))
         back()
@@ -220,7 +220,7 @@ def flappyInstructions():
 
     # Set Background - Using a picture
     spaceBackground = pygame.transform.scale(pygame.image.load(
-        "flappyBackground.png"), (1200, 800))
+        "images/flappyBackground.png"), (1200, 800))
     gamewindow.blit(spaceBackground, (0, 0))
     pygame.display.set_caption("Flappy Game Instructions")
     instructionFont = pygame.font.SysFont('arialrounded', 40)
@@ -303,7 +303,7 @@ def easyHardChoice(gamewindow):
 
     # Set Background - Using a picture
     spaceBackground = pygame.transform.scale(pygame.image.load(
-        "outsideBackground.jpg"), (1200, 800))
+        "images/outsideBackground.jpg"), (1200, 800))
     gamewindow.blit(spaceBackground, (0, 0))
     # Set the name of Display
     pygame.display.set_caption("Flappy Game")
