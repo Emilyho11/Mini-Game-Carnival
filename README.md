@@ -1,4 +1,4 @@
-Combined Children's Game
+Mini Game Carnival
   - Interactive and fun games for kids to have fun and learn!
   
   The games include:
