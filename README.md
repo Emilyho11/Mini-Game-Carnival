@@ -1,7 +1,7 @@
-## Mini Game Carnival
+# Mini Game Carnival
   - Interactive and fun games for kids to have fun and learn!
   
-# The games include:
+## The games include:
   - An apple-picking game that teaches math
   - A space game that teaches about the planets in our solar system
   - Two guessing games (Player guesses the zoomed-in picture shown on screen):
