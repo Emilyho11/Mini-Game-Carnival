@@ -1,5 +1,5 @@
 # Mini Game Carnival
-  - Interactive and fun games for kids to have fun and learn!
+  - Gaming platform that contains multiple educational and fun games for children to play!
   - Video Link:
     https://youtu.be/6X7TtgV8kBI
   
